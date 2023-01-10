@@ -1,0 +1,159 @@
+body {
+    background-color: #17181f;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.container-login {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    
+    
+}
+
+/*ENTRAR*/
+.entrar {
+    background-color: #0b8770;
+    background-image: linear-gradient( #314d4a, #0b8770, #a6c288);
+    width: 300px;
+    color: #010002;
+}
+
+.item-entrar {
+    width: 200px;
+    margin-left: 45px;
+    margin-top: 130px;
+    text-align: center;
+}
+
+.item-entrar input {
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    border-radius: 200px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    background-color: #010002;
+    transition: 1s;
+}
+
+input:hover {
+    background-color: white;
+    color: black;
+    height: 35px;
+}
+
+.entrar .item-entrar h2 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #010002;
+    color: white;
+    width: 100px;
+    border-radius: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/*CRIAR*/
+.criar {
+    width: 300px;
+    color: #0b8770;
+    background-color: #010002;
+}
+
+#icon {
+    margin-left: 80px;
+    margin-top: 80px;
+    font-size: 200px;
+    text-align: center;
+    animation-name: troca-cor ;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*AMINACÃO*/
+
+@keyframes troca-cor {
+    from {color: #0b8770;}
+    to {color: #a6c288;}
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+    .container-login {
+        display: block;
+        height: 800px;
+        width: 400px;
+        margin-left: 10px;
+
+    }
+    .entrar{
+        height: 600px;
+        width: 400px;
+        
+    }
+    .item-entrar {
+        margin-bottom: 100px;
+        padding-top: 100px;
+      
+        margin-left: 100px;
+        margin-bottom: 100px;
+        
+    }
+    .criar {
+        height: 0;
+        width: 0;
+    }
+    
+}
+
+@media (max-width: 512px) {
+    .container-login {
+        display: block;
+        height: 800px;
+        width: 600px;
+        margin-left: 80px;
+
+    }
+    .entrar{
+        height: 600px;
+        width: 300px;
+        text-align: center;
+        
+    }
+    .item-entrar {
+        margin-left: 50px;
+        
+    }
+}
+
+@media (max-width: 405px) {
+    .item-entrar {
+        margin-left: 50px;
+        
+    }
+} 
+
+@media (max-width: 375px) {
+    .container-login {
+        margin-left: 30px;
+    }
+}
